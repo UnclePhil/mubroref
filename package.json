@@ -1,7 +1,11 @@
 {
   "name": "mubroref",
   "version": "1.0.0",
-  "description": "Application multi-écrans fullscreen avec rafraîchissement automatique de pages web",
+  "author": {
+    "name": "UnclePhil",
+    "email": "koenigphil@gmail.com"
+  },
+  "description": "Application multi-écrans fullscreen avec rafraîchissement automatique de pages web" ,
   "main": "main.js",
   "scripts": {
     "start": "electron .",
