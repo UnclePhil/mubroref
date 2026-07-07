@@ -1,0 +1,50 @@
+{
+  "name": "mubroref",
+  "version": "1.0.0",
+  "description": "Application multi-écrans fullscreen avec rafraîchissement automatique de pages web",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "start:dev": "electron . --devtools",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "dist:linux": "electron-builder --linux",
+    "dist:win": "electron-builder --win",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "appId": "com.mubroref.app",
+    "productName": "MubroRef",
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "assets/**/*",
+      "config.example.json"
+    ],
+    "extraResources": [
+      {
+        "from": "config.example.json",
+        "to": "config.example.json"
+      }
+    ],
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "category": "Utility",
+      "artifactName": "${productName}-${version}-${arch}.${ext}"
+    },
+    "win": {
+      "target": ["nsis"],
+      "artifactName": "${productName}-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  }
+}

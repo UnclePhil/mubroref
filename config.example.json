@@ -1,0 +1,35 @@
+{
+  "refresh_interval_minutes": 5,
+  "mode": "fullscreen",
+  "show_devtools": false,
+  "url_assignment": "sequential",
+
+  "urls": [
+    "https://example.com",
+    "https://example.com/about"
+  ],
+
+  "display_mapping": [],
+
+  "clear_cache_on_start": true,
+  "clear_cache_interval_minutes": 0,
+  "isolate_sessions": false,
+
+  "auto_restart_hours": 0,
+
+  "log_level": "info",
+  "log_max_files": 5,
+  "log_max_size_mb": 1,
+
+  "retry_on_error": true,
+  "network_timeout_seconds": 30,
+  "show_error_page": false,
+
+  "proxy": null,
+  "proxy_bypass": "",
+
+  "blackout_schedule": "",
+  "blackout_show_clock": false,
+
+  "quit_hotkey": "Ctrl+Alt+Q"
+}
