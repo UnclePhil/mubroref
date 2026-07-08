@@ -31,5 +31,5 @@
   "blackout_schedule": "",
   "blackout_show_clock": false,
 
-  "quit_hotkey": "Ctrl+Alt+Q"
+  "quit_hotkey": "CommandOrControl+X"
 }
